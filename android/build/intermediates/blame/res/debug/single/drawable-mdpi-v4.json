@@ -2,5 +2,9 @@
     {
         "merged": "C:\\Users\\Rex\\Desktop\\workspace\\Solacedhistoria\\android\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_launcher.png",
         "source": "C:\\Users\\Rex\\Desktop\\workspace\\Solacedhistoria\\android\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Rex\\Desktop\\workspace\\SolacedHistoria\\android\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\Rex\\Desktop\\workspace\\SolacedHistoria\\android\\res\\drawable-mdpi\\ic_launcher.png"
     }
 ]

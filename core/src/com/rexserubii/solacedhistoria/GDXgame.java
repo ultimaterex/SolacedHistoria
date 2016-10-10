@@ -4,6 +4,8 @@ import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.InputProcessor;
+import com.badlogic.gdx.audio.Music;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
@@ -14,14 +16,22 @@ public class GDXgame extends ApplicationAdapter implements InputProcessor{
 	SpriteBatch batch;
 	Texture img;
     Sprite sprite;
+
 	
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
-		img = new Texture("sprite.png");
-        sprite = new Sprite(img);
+		img = new Texture("MCat.jpg");
+		sprite = new Sprite(img);
         sprite.setPosition(Gdx.graphics.getWidth()/2 - sprite.getWidth()/2, Gdx.graphics.getHeight()/2 - sprite.getHeight()/2);
-
+		Music mp3Music = Gdx.audio.newMusic(Gdx.files.internal("Switch-On.mp3"));
+		mp3Music.play();
+		mp3Music.setVolume(1.0f);
+		mp3Music.pause();
+		mp3Music.stop();
+		mp3Music.play();
+		mp3Music.setLooping(true);
+		Gdx.app.log("SONG",Float.toString(mp3Music.getPosition()));
 	}
 
 	@Override
