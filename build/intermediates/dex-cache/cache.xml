@@ -1,12 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" >
+<items version="2" />
 
-    <item
-        jar="C:\Users\Rex\Desktop\workspace\SolacedHistoria\core\build\libs\core-1.0.jar"
-        jumboMode="false"
-        revision="24.0.1"
-        sha1="35de886bf82676ecb57794dc4f8dacedf8f26b72">
-        <dex dex="C:\Users\Rex\Desktop\workspace\SolacedHistoria\android\build\intermediates\pre-dexed\debug\core-1.0_b0dea89cace115e50132861e4c76496850c09d3b.jar" />
-    </item>
-
-</items>

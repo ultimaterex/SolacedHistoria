@@ -15,14 +15,16 @@ public class GDXgame extends ApplicationAdapter {
 	Texture img;
     Sprite sprite;
 
-	
+
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
+		//Creating and defining the sprite
 		img = new Texture("MCat.jpg");
 		sprite = new Sprite(img);
         sprite.setPosition(Gdx.graphics.getWidth()/2 - sprite.getWidth()/2, Gdx.graphics.getHeight()/2 - sprite.getHeight()/2);
 
+		//Added Music to the project
 		Music mp3Music = Gdx.audio.newMusic(Gdx.files.internal("Switch-On.mp3"));
 		mp3Music.play();
 		mp3Music.setVolume(1.0f);
@@ -30,7 +32,6 @@ public class GDXgame extends ApplicationAdapter {
 		mp3Music.stop();
 		mp3Music.play();
 		mp3Music.setLooping(true);
-		Gdx.app.log("SONG",Float.toString(mp3Music.getPosition()));
 	}
 
 	@Override
@@ -62,7 +63,7 @@ public class GDXgame extends ApplicationAdapter {
 		batch.draw(sprite, sprite.getX(), sprite.getY());
 		batch.end();
 	}
-	
+
 	@Override
 	public void dispose () {
 		batch.dispose();
